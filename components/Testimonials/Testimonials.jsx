@@ -75,7 +75,7 @@ const Testimonials = () => {
               {testimonials.map((item, index) => (
                 <div
                   key={index}
-                  className="testimonial-item"
+                  className={`testimonial-item ${activeIndex === index ? 'active' : ''}`}
                   onClick={() => handleSlideClick(index)}
                   style={{ cursor: 'pointer' }}
                 >
